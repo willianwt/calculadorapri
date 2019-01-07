@@ -20,14 +20,22 @@
         body,html {
             height: 100%;
             font-family: 'Raleway', sans-serif;
-
+        }
+        *{
+            z-index: 1;
+        }
+        #estrela {
+            position: absolute;
+            z-index: -1 !important;
+            background: transparent;
+            width: 9vw;
         }
     </style>
 </head>
 <body>
     <div class="row h-100 mx-1">
         <div class="col-sm-6 mx-auto align-self-center mb-5 border border-dark rounded py-2" style="background-color: #EEF7FA;">
-            <img src="estrelaudf.png" alt="Estrela UDF" class="img-responsive float-left" style="background: transparent;">
+            <img src="estrelaudf.png" alt="Estrela UDF" id="estrela" class="img-responsive float-left">
 
             <div class="text-center mb-5">
                 <h1>Calculadora de Nota da PRI - UDF</h1>
