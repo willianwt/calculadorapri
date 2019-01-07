@@ -28,10 +28,14 @@ for ($i = 1; $i <= $qtdMaterias; $i++){
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Calculadora de nota da PRI</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Calculadora de nota da PRI</title>
 
     <style>
         body,html {
             height: 100%;
+            font-family: 'Raleway', sans-serif;
+
         }
         .notaGlobal{
             font-size: 20px;
@@ -57,7 +61,7 @@ for ($i = 1; $i <= $qtdMaterias; $i++){
                     <div>
                         <p class="notaGlobal">Sua prova continha <?php echo $totalQuestoes; ?> questões.</p>
                         <p class="notaGlobal">Você acertou no total <?php echo $totalAcertos; ?> questões.
-                        <p class="notaGlobal"><b>Sua nota global é <?php echo $notaGlobal; ?>.</b></p>
+                        <p class="notaGlobal"><b>Sua nota global é <?php echo number_format($notaGlobal,2); ?>.</b></p>
                     </div>
                     <div class="row">
                     <?php
@@ -65,8 +69,8 @@ for ($i = 1; $i <= $qtdMaterias; $i++){
                             echo '<div class="border border-dark col-sm-5  mx-auto my-2" style="background-color: #EEF7FA;">
                                     <h3>'.ucwords(${'nomeMateria' . $i}).'</h3>
                                     <p>Você acertou '.${'qtdAcertosMateria' . $i}.' de '. ${'qtdQuestoesMateria' . $i} .' questões nesta disciplina.</p>
-                                    <p>Sua nota Específica nesta matéria é '. ${'notaMateria' . $i} .'</p>
-                                    <h5>A nota <b>total</b> em '.ucwords(${'nomeMateria' . $i}).' é <b>'. ${'notaTotalMateria'.$i} .'</b></h5>
+                                    <p>Sua nota Específica nesta disciplina é '. number_format(${'notaMateria' . $i},2) .'</p>
+                                    <h5>A nota <b>total</b> em '.ucwords(${'nomeMateria' . $i}).' é <b>'. number_format(${'notaTotalMateria'.$i},2) .'</b></h5>
                                   </div>';
                         }
                     ?>

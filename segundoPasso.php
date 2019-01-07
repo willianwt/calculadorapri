@@ -14,10 +14,14 @@ $qtdMaterias = $_GET['qtdMaterias'];
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Calculadora de nota da PRI</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Calculadora de nota da PRI</title>
 
     <style>
         body,html {
             height: 100%;
+            font-family: 'Raleway', sans-serif;
+
         }
         img{
             position: absolute;
@@ -39,15 +43,15 @@ $qtdMaterias = $_GET['qtdMaterias'];
                 for ($i = 1; $i <= $qtdMaterias; $i++){
                     echo '<div class="border border-info rounded p-1 m-1 col-sm-5 align-items-center" style="background-color: #EEF7FA;">
                             <div class="form-group">
-                              <label for="qtdMaterias"><h5>Informe o nome da '.$i.'ª Matéria:</h5></label>
-                              <input type="text" class="form-control" id="nomeMateria'.$i.'" name="nomeMateria'.$i.'" aria-describedby="nomeMateria'.$i.'" placeholder="Nome da matéria"  required>
+                              <label for="qtdMaterias"><h5>Informe o nome da '.$i.'ª Disciplina:</h5></label>
+                              <input type="text" class="form-control" id="nomeMateria'.$i.'" name="nomeMateria'.$i.'" aria-describedby="nomeMateria'.$i.'" placeholder="Nome da Disciplina"  required>
                           </div>';
                     echo '<div class="form-group">
-                              <label for="qtdQuestoesMateria"><h5>Informe o número de questões da '.$i.'ª Matéria:</h5></label>
+                              <label for="qtdQuestoesMateria"><h5>Informe o número de questões da '.$i.'ª Disciplina:</h5></label>
                               <input type="number" class="form-control" id="qtdQuestoesMateria'.$i.'" name="qtdQuestoesMateria'.$i.'" aria-describedby="qtdQuestoesMateria'.$i.'" placeholder="Número de questões" required>
                           </div>';
                     echo '<div class="form-group">
-                              <label for="qtdAcertosMateria"><h5>Informe o número de acertos na '.$i.'ª Matéria: </h5></label>
+                              <label for="qtdAcertosMateria"><h5>Informe o número de acertos na '.$i.'ª Disciplina: </h5></label>
                               <input type="number" class="form-control" id="qtdAcertosMateria'.$i.'" name="qtdAcertosMateria'.$i.'" aria-describedby="qtdAcertosMateria'.$i.'" placeholder="Quantidade de Acertos" required>
                           </div>';
                     echo '</div><hr>';

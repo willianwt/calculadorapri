@@ -1,3 +1,9 @@
+<!--###################################################################################################################################
+#		PROJETO CALCULADORA DE NOTA DA PRI - PROVA REGIMENTAL INTEGRALIZADA
+#		AUTOR: 	WILLIAN TAIGUARA
+#		CONTATO: willianwt@gmail.com
+#######################################################################################################################################-->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,12 +13,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Calculadora de nota da PRI</title>
 
     <style>
         body,html {
             height: 100%;
+            font-family: 'Raleway', sans-serif;
+
         }
     </style>
 </head>
@@ -27,7 +35,7 @@
             </div>
             <form method="get" action="segundoPasso.php">
                 <div class="form-group text-center">
-                    <label for="qtdMaterias"><h4>Informe a quantidade de MATÉRIAS da PRI:</h4></label>
+                    <label for="qtdMaterias"><h4>Informe a quantidade de DISCIPLINAS da PRI:</h4></label>
                     <input type="number" class="form-control col-sm-4 text-center mx-auto" id="qtdMaterias" name="qtdMaterias" aria-describedby="qtdMaterias" placeholder="Mínimo de 1 / Máximo de 20" min="1" max="20" required>
                 </div>
                 <button type="submit" class="btn btn-primary float-right">Enviar</button>
