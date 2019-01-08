@@ -50,7 +50,7 @@
             </form>
         </div>
     </div>
-    <footer class="footer fixed-bottom text-right">
+    <footer class="footer fixed-bottom text-right" style="font-size: .7em">
         Desenvolvido por Willian Taiguara em <a href="mailto:willianwt@gmail.com">willianwt@gmail.com<a>
     </footer>
     <!-- Optional JavaScript -->

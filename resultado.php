@@ -79,7 +79,7 @@ for ($i = 1; $i <= $qtdMaterias; $i++){
             <a href="javascript:history.back()" class="btn btn-block btn-primary my-2 col-sm-6 mx-auto">Voltar</a>
         </div>
 
-    <footer class="footer fixed-bottom text-right">
+    <footer class="footer fixed-bottom text-right" style="font-size: .7em">
         Desenvolvido por Willian Taiguara em <a href="mailto:willianwt@gmail.com">willianwt@gmail.com<a>
     </footer>
 

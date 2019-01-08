@@ -19,7 +19,7 @@ $qtdMaterias = $_GET['qtdMaterias'];
 
     <style>
         body,html {
-            height: 100%;
+            height: 98%;
             font-family: 'Raleway', sans-serif;
 
         }
@@ -67,7 +67,7 @@ $qtdMaterias = $_GET['qtdMaterias'];
             </div>
         </div>
     </div>
-    <footer class="footer fixed-bottom text-right">
+    <footer class="footer fixed-bottom text-right" style="font-size: .7em">
         Desenvolvido por Willian Taiguara em <a href="mailto:willianwt@gmail.com">willianwt@gmail.com<a>
     </footer>
 <!-- Optional JavaScript -->
