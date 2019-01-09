@@ -51,7 +51,7 @@
         </div>
     </div>
     <footer class="footer fixed-bottom text-right" style="font-size: .7em">
-        Desenvolvido por Willian Taiguara em <a href="mailto:willianwt@gmail.com">willianwt@gmail.com<a>
+        Desenvolvido por <a href="mailto:willianwt@gmail.com">Willian Taiguara<a>
     </footer>
     <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
