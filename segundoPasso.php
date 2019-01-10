@@ -1,5 +1,5 @@
 <?php
-$qtdMaterias = $_GET['qtdMaterias'];
+$qtdMaterias = $_POST['qtdMaterias'];
 
 ?>
 
@@ -37,7 +37,7 @@ $qtdMaterias = $_GET['qtdMaterias'];
                 <h1>Calculadora de Nota da PRI - UDF</h1>
                 <h5>Prova Regimental Integralizada</h5>
             </div>
-            <form method="get" action="resultado.php">
+            <form method="POST" action="resultado.php">
                 <div class="container-fluid row">
             <?php
                 for ($i = 1; $i <= $qtdMaterias; $i++){

@@ -41,7 +41,7 @@
                 <h1>Calculadora de Nota da PRI - UDF</h1>
                 <h4>Prova Regimental Integralizada</h4>
             </div>
-            <form method="get" action="segundoPasso.php">
+            <form method="post" action="segundoPasso.php">
                 <div class="form-group text-center">
                     <label for="qtdMaterias"><h4>Informe a quantidade de DISCIPLINAS da PRI:</h4></label>
                     <input type="number" class="form-control col-sm-4 text-center mx-auto" id="qtdMaterias" name="qtdMaterias" aria-describedby="qtdMaterias" placeholder="Mínimo de 1 / Máximo de 20" min="1" max="20" required>

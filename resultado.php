@@ -1,14 +1,14 @@
 <?php
-$qtdMaterias = $_GET['qtdMaterias'];
+$qtdMaterias = $_POST['qtdMaterias'];
 $totalQuestoes = 0;
 $totalAcertos = 0;
 for ($i = 1; $i <= $qtdMaterias; $i++) {
-    ${'nomeMateria' . $i} = $_GET['nomeMateria' . $i]; // nome da matéria
-    ${'qtdQuestoesMateria' . $i} = $_GET['qtdQuestoesMateria' . $i]; // quantidade de questões de cada materia
-    ${'qtdAcertosMateria' . $i} = $_GET['qtdAcertosMateria' . $i]; // quantidade de acertos de cada materia
-    ${'notaMateria' . $i} = round((3 / $_GET['qtdQuestoesMateria' . $i]) * $_GET['qtdAcertosMateria' . $i], 2); // nota da materia = (3 / quantidade de questoes da materia) * quantidade de acertos da materia
-    $totalQuestoes = $totalQuestoes + $_GET['qtdQuestoesMateria' . $i]; // total de questões da prova
-    $totalAcertos = $totalAcertos + $_GET['qtdAcertosMateria' . $i]; //total de acertos
+    ${'nomeMateria' . $i} = $_POST['nomeMateria' . $i]; // nome da matéria
+    ${'qtdQuestoesMateria' . $i} = $_POST['qtdQuestoesMateria' . $i]; // quantidade de questões de cada materia
+    ${'qtdAcertosMateria' . $i} = $_POST['qtdAcertosMateria' . $i]; // quantidade de acertos de cada materia
+    ${'notaMateria' . $i} = round((3 / $_POST['qtdQuestoesMateria' . $i]) * $_POST['qtdAcertosMateria' . $i], 2); // nota da materia = (3 / quantidade de questoes da materia) * quantidade de acertos da materia
+    $totalQuestoes = $totalQuestoes + $_POST['qtdQuestoesMateria' . $i]; // total de questões da prova
+    $totalAcertos = $totalAcertos + $_POST['qtdAcertosMateria' . $i]; //total de acertos
     $notaGlobal = round((2 / $totalQuestoes)*$totalAcertos, 2);
 
 }
