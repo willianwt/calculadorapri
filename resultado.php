@@ -2,6 +2,16 @@
 $qtdMaterias = $_POST['qtdMaterias'];
 $totalQuestoes = 0;
 $totalAcertos = 0;
+
+for ($i = 1; $i <= $qtdMaterias; $i++) {
+${'nomeMateria' . $i} = $_POST['nomeMateria' . $i]; // nome da matéria
+${'qtdQuestoesMateria' . $i} = $_POST['qtdQuestoesMateria' . $i]; // quantidade de questões de cada materia
+${'qtdAcertosMateria' . $i} = $_POST['qtdAcertosMateria' . $i]; // quantidade de acertos de cada materia
+    if (${'qtdQuestoesMateria' . $i} < ${'qtdAcertosMateria' . $i} ){
+        echo '<script type="application/javascript">alert("A quantidade de acertos na disciplina '.strtoupper(${'nomeMateria' . $i}).' é maior que a quantidade de questões! Verifique isso.."); history.go(-1);</script>';
+        exit();
+    }
+}
 for ($i = 1; $i <= $qtdMaterias; $i++) {
     ${'nomeMateria' . $i} = $_POST['nomeMateria' . $i]; // nome da matéria
     ${'qtdQuestoesMateria' . $i} = $_POST['qtdQuestoesMateria' . $i]; // quantidade de questões de cada materia
